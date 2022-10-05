@@ -1,31 +1,28 @@
-// import 'package:flutter/material.dart';
-// import 'package:map_1/demo_location.dart';
-//
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:map_1/current_location_screen.dart';
-import 'package:map_1/demo_location.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
-import 'googlemap_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:map_1/screen/SplashScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const runApp1());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class runApp1 extends StatelessWidget {
+  const runApp1({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MapSample(),
+        debugShowCheckedModeBanner: false,
+        title: 'BUBT ICPC 2022',
+        theme: ThemeData(
+          // This is the theme of your application.
+
+          primarySwatch: Colors.blue,
+        ),
+        home: Splash()
+      //DataTableDemo(title: 'Flutter Demo Home Page'),
     );
   }
 }
-
